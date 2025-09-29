@@ -1,0 +1,23 @@
+@import "tailwindcss" important;
+
+/* @media (max-width: 1280px) {
+  :root {
+    --root-font-size: 16px!important;
+  }
+} */
+
+body {
+  font-size: 1rem;
+  /* height: 100%; */
+  background: var(--color-background-default);
+}
+
+.dark{
+  body{
+    background: var(--color-background-default);
+  }
+}
+
+#main{
+  padding: 3.5rem 2.875rem;
+}
