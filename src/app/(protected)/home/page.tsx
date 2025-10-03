@@ -11,7 +11,7 @@ import { useStepper } from '../(context)/StepperContext';
 import { AttachSpreadsheet } from './(components)/AttachSpreadsheet';
 import { ExecuteEFisco } from './(components)/ExecuteEFisco';
 import { SearchCatmatCode } from './(components)/SearchCatmatCode';
-import { SearchPricesPncp } from './(components)/SearchPricesPncp';
+import SearchPricesPncp from './(components)/SearchPricesPncp';
 
 const Home = () => {
 

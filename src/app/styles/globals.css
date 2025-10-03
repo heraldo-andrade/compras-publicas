@@ -21,3 +21,100 @@ body {
 #main{
   padding: 3.5rem 2.875rem;
 }
+
+/* Component SearchCatmatCode */
+.search-catmat-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  overflow: auto;
+}
+
+.search-catmat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .search-catmat-item {
+    flex-direction: row;
+  }
+}
+
+.search-catmat-info-section {
+  width: 100%;
+  border-bottom: 1px solid var(--color-outline-default);
+}
+
+@media (min-width: 1024px) {
+  .search-catmat-info-section {
+    width: 25%;
+    border-right: 1px solid var(--color-outline-default);
+    border-bottom: none;
+  }
+}
+
+.search-catmat-header {
+  position: relative;
+  border-bottom: 1px solid var(--color-outline-default);
+  color: var(--color-text-primary);
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.search-catmat-header::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-background-default);
+}
+
+.search-catmat-description {
+  height: calc(100% - 47.04px);
+  border-bottom: 1px solid var(--color-outline-default);
+  padding: 1rem;
+}
+
+.search-catmat-table-wrapper {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .search-catmat-table-wrapper {
+    width: 75%;
+  }
+}
+
+.search-catmat-description-cell {
+  text-overflow: ellipsis;
+  max-width: 20rem;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+/* Component SearchPricesPncp */
+.spncp-divider {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.spncp-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.spncp-col {
+  flex: 1 1 0%;
+}
+
+.text-truncate {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
